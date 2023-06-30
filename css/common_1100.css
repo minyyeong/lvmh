@@ -1,0 +1,185 @@
+@charset "utf-8";
+* {margin:0; padding:0; box-sizing:border-box; font-family:"맑은 고딕";}
+ul, ol, li {list-style:none; margin:0; padding:0;}
+
+@media (min-width:1260px){
+/*section*/
+section {width:1260; height:7650px;}
+/*news*/
+.news {width:100%; height:1200px; display:flex; flex-direction:row; justify-content:space-between; align-items:center;}
+.news > .news_1 {width:50%; height:1200px; display:flex; justify-content:center; align-items:center; }
+.news > .news_1 > .content1 { width:70%; height:900px; display:flex; flex-flow:column wrap; justify-content:center; align-content:center; margin-top:-50px; background-color:#f5efeb;}
+.news > .news_1 > .content1 > h1 {font-size:40px; float:right; color: #4c4c4c;}
+.news > .news_1 > .content1 > p {font-size:13px; line-height:17px; color: #5b5b5b;}
+.news > .news_1 > .content1 > h2 {font-size:30px; font-family: 'Hahmlet', serif; line-height:35px;}
+.news > .news_1 > .content1 > .n2_photo {width:100%; height:60%; overflow: hidden;}
+.news > .news_1 > .content1 > .n2_photo > img {width:100%; height:100%; transform:scale(1); transition:0.3s;}
+.news > .news_1 > .content1 > .n2_photo > img:hover {transform:scale(1.1); transition:0.6s; opacity:0.9; cursor:pointer;}
+
+
+.news > .news_2 {width:50%; height:1200px; display:flex; justify-content:center; background-color:#fff;}
+
+.news > .news_2 > .content2 {width:70%; height:500px; margin-top:330px;}
+.news > .news_2 > .content2 > .img {width:100%; height:300px; overflow: hidden;}
+.news > .news_2 > .content2 > .img > img {width:100%; height:100%; transform:scale(1); transition:0.3s;}
+.news > .news_2 > .content2 > .img > img:hover {transform:scale(1.1); transition:0.6s; opacity:0.9; cursor:pointer;}
+.news > .news_2 > .content2 > p {font-size:13px; margin:15px 10px; line-height:17px; color: #5b5b5b;}
+.news > .news_2 > .content2 > h3 {font-size:15px; font-family: 'Hahmlet', serif; line-height:19px;}
+
+
+.news > .news_2 > .content3 {width:70%; height:450px; margin:20px 100px 170px 100px; display:flex; display:flex; justify-content:space-between;}
+.news > .news_2 > .content3 > .c3_1 {width:48%; height:450px;}
+.news > .news_2 > .content3 > .c3_1 > .img {width:100%; height:310px; overflow:hidden;}
+.news > .news_2 > .content3 > .c3_1 > .img > img {width:100%; height:100%; transform:scale(1); transition:0.3s;}
+.news > .news_2 > .content3 > .c3_1 > .img > img:hover {transform:scale(1.1); transition:0.6s; opacity:0.9; cursor:pointer;}
+.news > .news_2 > .content3 > .c3_1 > p {font-size:13px; margin:15px 10px; line-height:17px; color: #5b5b5b;}
+.news > .news_2 > .content3 > .c3_1 > h3 {font-size:15px; font-family: 'Hahmlet', serif;  line-height:19px;}
+
+
+.news > .news_2 > .content3 > .c3_2 {width:48%; height:450px;}
+.news > .news_2 > .content3 > .c3_2 > .img2 {width:100%; height:310px; overflow:hidden;}
+.news > .news_2 > .content3 > .c3_2 > .img2 > img {width:100%; height:100%; transform:scale(1); transition:0.3s;}
+.news > .news_2 > .content3 > .c3_2 > .img2 > img:hover {transform:scale(1.1); transition:0.6s; opacity:0.9; cursor:pointer;}
+.news > .news_2 > .content3 > .c3_2 > p {font-size:13px; margin:15px 10px; line-height:17px;  color: #5b5b5b;}
+.news > .news_2 > .content3 > .c3_2 > h3 {font-size:15px; font-family: 'Hahmlet', serif; line-height:19px;}
+
+/*focus*/
+.focus {width:100%; height:500px; background-color: #eedfd2; display:flex; flex-direction:column; align-items:center; justify-content:space-evenly; padding:100px 0;}
+.focus > .fc {width:1240px; height:20px;}
+.focus > .fc > h1 {font-size:40px; color: #4c4c4c;}
+
+.focus > .f_1 {width:1200px; height:220px; display:flex; justify-content:space-evenly; align-content:center;}
+.focus > .f_1 > .content_1 {width:20%; height:100%; background-color:#fff; margin:0 5px;}
+.focus > .f_1 > .content_1 > .img {width:100%; height:75%; overflow: hidden;}
+.focus > .f_1 > .content_1 > .img > img {width:100%; height:100%; transform:scale(1); transition:0.3s;}
+.focus > .f_1 > .content_1 > .img > img:hover {transform:scale(1.08); transition:0.5s; cursor:pointer;}
+.focus > .f_1 > .content_1 > p {font-size:12px; margin:10px; line-height:15px;}
+
+/*talents*/
+.talents {width:100%; height:600px; background-image:url("../img/talents.JPG"); background-position:center; display:flex; flex-direction:column; justify-content: center; align-items:center;}
+.talents > .content {width:600px; height:250px; display:flex; flex-direction: column; justify-content:space-evenly; align-items:center; text-align:center;}
+.talents > .content > h1 {font-size:40px; color:#fff;}
+.talents > .content > p {font-size:15px; color:#fff;}
+.talents > .content > .button {width:500px; height:40px;}
+.talents > .content > .button > button {width:220px; height: 40px; border:none; margin:0 10px; font-size:11px;}
+.talents > .content > .button > button:hover {background-color:rgb(0, 0, 41); color:#fff; cursor:pointer;}
+
+/*hcgc*/
+.house {width:100%; height:900px; display:flex;}
+.house > .content {width:100%; height:900px; background-color: #fff; display:flex; flex-direction:row; justify-content:flex-end; align-items:center;}
+.house > .content > .hc {width:550px; height:550px; margin:0 70px 0 0; display:flex; flex-direction:column; justify-content:space-between;}
+.house > .content > .hc > .img {width:550px; height:330px; background-color: aqua; overflow: hidden;}
+.house > .content > .hc > .img > img {width:100%; height:100%; transform:scale(1); transition:0.3s;}
+.house > .content > .hc > .img > img:hover {transform:scale(1.08); transition:0.5s; cursor:pointer;}
+.house > .content > .hc > h1 {font-size:33px; letter-spacing:3px;}
+.house > .content > .hc > p {font-size:15px; line-height:20px; color: #4c4c4c;}
+.house > .content > .hc > button {width:230px; height:40px; border:1px solid #121526; font-size: 11px; background-color:#fff;}
+.house > .content > .hc > button:hover {background-color:rgb(0, 0, 41); color:#fff; cursor:pointer;}
+
+.house > .content_1 {width:100%; height:900px; background-color:#eedfd2; display:flex; flex-direction:row; justify-content:flex-start; align-items:center;}
+.house > .content_1 > .gc {width:550px; height:550px; margin:0 0 0 70px; display:flex; flex-direction:column; justify-content:space-between;}
+.house > .content_1 > .gc > .img {width:550px; height:330px; overflow: hidden;}
+.house > .content_1 > .gc > .img > img {width:100%; height:100%; transform:scale(1); transition:0.3s;}
+.house > .content_1 > .gc > .img > img:hover {transform:scale(1.08); transition:0.5s; cursor:pointer;}
+.house > .content_1 > .gc > h1 {font-size:33px; letter-spacing:3px;}
+.house > .content_1 > .gc > p {font-size:15px; line-height:20px; color: #4c4c4c;}
+.house > .content_1 > .gc > button {width:230px; height:40px; border:1px solid #121526; font-size: 11px; background-color:#eedfd2;}
+.house > .content_1 > .gc > button:hover {background-color:rgb(0, 0, 41); color:#fff; cursor:pointer;}
+
+/*houses*/
+.houses {width:100%; height:700px; background-color: #ec9c9c; margin:0 auto; background-image:url("../img/houses.JPG"); background-position:center; background-size:cover; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center;}
+.houses > h1 {font-size:50px; color:#fff; font-family: 'Bona Nova', serif;}
+.houses > h1::after {content:""; display:block; width:100px; border-bottom: 1px solid #fff; margin:20px auto;}
+.houses > p {color:#fff; font-size:14px; font-family: 'Hahmlet', serif; line-height:20px; margin:0 0;}
+
+/*houses_1*/
+.houses_i {width:100%; height:650px; background-color:#e8d9cc; margin:0 auto; display:flex; justify-content:center; align-items:center; flex-direction: column; text-align:center;}
+.houses_i > h1 {font-size:35px; line-height:45px; margin-top:-110px;}
+.houses_i > p {font-size:14px; margin-top:50px; font-family: 'Hahmlet', serif; line-height:20px;  width:1000px;}
+
+/*product*/
+.product {width:1000px; height:1900px; background-color: #fff; margin:-120px auto;}
+.product > .content {width:1000px; height:250px; display: flex;justify-content:space-between;}
+.product > .content > .box {width:300px; height: 250px; text-align:center; display: flex; justify-content:center; flex-direction:column;}
+.product > .content > .box > h1 {font-size:30px; color: #4c4c4c; margin:10px 0; font-family: 'Montserrat', sans-serif; }
+.product > .content > .box > h2 {font-size:20px; color: #4c4c4c;}
+.product > .content > .box > p {font-size:12px; margin-top:10px; color:gray; font-family: 'Montserrat', sans-serif; letter-spacing:2px;}
+.product > .content > .box > p:after {content:""; width:50px; display:block; border-bottom:2px solid #4c4c4c; margin:20px auto;}
+.product > .photo {width:1000px; height:1500px; display:flex; flex-wrap: wrap; justify-content:space-between;}
+.product > .photo >.box2 {width:270px; height:270px; background-color: #fff; text-align:center;}
+.product > .photo >.box2 > .img {width:270px; height:180px; background-color: aqua; overflow: hidden;}
+.product > .photo >.box2 > .img > img {width:100%; height:100%; transform:scale(1); transition:0.3s;}
+.product > .photo >.box2 > .img > img:hover {transform:scale(1.08); transition:0.8s; cursor:pointer;}
+.product > .photo >.box2 > h1 {font-size:20px; font-family: 'Bona Nova', serif; margin:20px 0 0 0;}
+.product > .photo >.box2 > p {font-size:11px; color: #a7a7a7; margin-top:5px;}
+
+/*meet*/
+.meet {width:100%; height:1200px; margin:0 auto; display:flex; flex-flow:column wrap; justify-content:space-evenly; align-items:center;}
+.meet > .mc {width:1200px; height:20px;}
+.meet > .mc > h1 {font-size:40px; color: #4c4c4c;}
+.meet > .content {width:1200px; height:1000px; background-color: #fff; display:flex; flex-flow:row wrap; justify-content:space-between;}
+
+.meet > .content > .mc1 {width:277px; height:500px; margin:10px;}
+.meet > .content > .mc1 > .img {width:277px; height:auto;}
+.meet > .content > .mc1 > .img > img {width:100%; height: auto; opacity:1; transition:0.3s;}
+.meet > .content > .mc1 > .img > img:hover {opacity:0.7; cursor:pointer; transition:0.8s;}
+.meet > .content > .mc1 > h2 {font-size: 25px; margin:20px 0 0 10px; font-family: 'Hahmlet', serif; transition:0.3s;}
+.meet > .content > .mc1 > h2:hover {color: #949494; cursor: pointer; transition:0.3s;}
+.meet > .content > .mc1 > p {font-size: 18px; margin:5px 0 0 10px; color: #949494;font-family: 'Gowun Batang', serif;}
+
+.meet > .content > .mc2 {width:277px; height:400px; margin:-20px 10px 10px 10px; }
+.meet > .content > .mc2 > .img {width:277px; height:auto;}
+.meet > .content > .mc2 > .img > img {width:100%; height: auto; opacity:1; transition:0.3s;}
+.meet > .content > .mc2 > .img > img:hover {opacity:0.7; cursor:pointer; transition:0.8s;}
+.meet > .content > .mc2 > h2 {font-size: 25px; margin:20px 0 0 10px; font-family: 'Hahmlet', serif; transition:0.3s;}
+.meet > .content > .mc2 > h2:hover {color: #949494; cursor: pointer; transition:0.3s;}
+.meet > .content > .mc2 > p {font-size: 18px; margin:5px 0 0 10px; color: #949494;font-family: 'Gowun Batang', serif;}
+
+.meet > .content > .mc3 {width:277px; height:530px; margin:30px 10px 10px 10px; }
+.meet > .content > .mc3 > .img {width:277px; height:auto;}
+.meet > .content > .mc3 > .img > img {width:100%; height: auto; opacity:1; transition:0.3s;}
+.meet > .content > .mc3 > .img > img:hover {opacity:0.7; cursor:pointer; transition:0.8s;}
+.meet > .content > .mc3 > h2 {font-size: 25px; margin:20px 0 0 10px; font-family: 'Hahmlet', serif; transition:0.3s;}
+.meet > .content > .mc3 > h2:hover {color: #949494; cursor: pointer; transition:0.3s;}
+.meet > .content > .mc3 > p {font-size: 18px; margin:5px 0 0 10px; color: #949494;font-family: 'Gowun Batang', serif;}
+
+.meet > .content > .mc4 {width:277px; height:300px; margin:10px;}
+.meet > .content > .mc4 > .img {width:277px; height:auto;}
+.meet > .content > .mc4 > .img > img {width:100%; height: auto; opacity:1; transition:0.3s;}
+.meet > .content > .mc4 > .img > img:hover {opacity:0.7; cursor:pointer; transition:0.8s;}
+.meet > .content > .mc4 > h2 {font-size: 25px; margin:20px 0 0 10px; font-family: 'Hahmlet', serif; transition:0.3s;}
+.meet > .content > .mc4 > h2:hover {color: #949494; cursor: pointer; transition:0.3s;}
+.meet > .content > .mc4 > p {font-size: 18px; margin:5px 0 0 10px; color: #949494;font-family: 'Gowun Batang', serif;}
+
+.meet > .content > .mc5 {width:277px; height:350px; margin:-25px 10px 10px 10px; }
+.meet > .content > .mc5 > .img {width:277px; height:auto;}
+.meet > .content > .mc5 > .img > img {width:100%; height: auto; opacity:1; transition:0.3s;}
+.meet > .content > .mc5 > .img > img:hover {opacity:0.7; cursor:pointer; transition:0.8s;}
+.meet > .content > .mc5 > h2 {font-size: 25px; margin:20px 0 0 10px; font-family: 'Hahmlet', serif; transition:0.3s;}
+.meet > .content > .mc5 > h2:hover {color: #949494; cursor: pointer; transition:0.3s;}
+.meet > .content > .mc5 > p {font-size: 18px; margin:5px 0 0 10px; color: #949494;font-family: 'Gowun Batang', serif;}
+
+.meet > .content > .mc6 {width:277px; height:500px; margin:-155px 10px 10px 10px; }
+.meet > .content > .mc6 > .img {width:277px; height:auto;}
+.meet > .content > .mc6 > .img > img {width:100%; height: auto; opacity:1; transition:0.3s;}
+.meet > .content > .mc6 > .img > img:hover {opacity:0.7; cursor:pointer; transition:0.8s;}
+.meet > .content > .mc6 > h2 {font-size: 25px; margin:20px 0 0 10px; font-family: 'Hahmlet', serif; transition:0.3s;}
+.meet > .content > .mc6 > h2:hover {color: #949494; cursor: pointer; transition:0.3s;}
+.meet > .content > .mc6 > p {font-size: 18px; margin:5px 0 0 10px; color: #949494;font-family: 'Gowun Batang', serif;}
+
+.meet > .content > .mc7 {width:277px; height:330px; margin:18px 10px 10px 10px; }
+.meet > .content > .mc7 > .img {width:277px; height:auto;}
+.meet > .content > .mc7 > .img > img {width:100%; height: auto; opacity:1; transition:0.3s;}
+.meet > .content > .mc7 > .img > img:hover {opacity:0.7; cursor:pointer; transition:0.8s;}
+.meet > .content > .mc7 > h2 {font-size: 25px; margin:20px 0 0 10px; font-family: 'Hahmlet', serif; transition:0.3s;}
+.meet > .content > .mc7 > h2:hover {color: #949494; cursor: pointer; transition:0.3s;}
+.meet > .content > .mc7 > p {font-size: 18px; margin:5px 0 0 10px; color: #949494;font-family: 'Gowun Batang', serif;}
+
+.meet > .content > .mc8 {width:277px; height:500px; margin:-230px 10px 10px 10px; }
+.meet > .content > .mc8 > .img {width:277px; height:auto;}
+.meet > .content > .mc8 > .img > img {width:100%; height: auto; opacity:1; transition:0.3s;}
+.meet > .content > .mc8 > .img > img:hover {opacity:0.7; cursor:pointer; transition:0.8s;}
+.meet > .content > .mc8 > h2 {font-size: 25px; margin:20px 0 0 10px; font-family: 'Hahmlet', serif; transition:0.3s;}
+.meet > .content > .mc8 > h2:hover {color: #949494; cursor: pointer; transition:0.3s;}
+.meet > .content > .mc8 > p {font-size: 18px; margin:5px 0 0 10px; color: #949494;font-family: 'Gowun Batang', serif;}
+}

@@ -1,0 +1,187 @@
+@charset "utf-8";
+* {margin:0; padding:0; box-sizing:border-box; font-family:"맑은 고딕";}
+ul, ol, li {list-style:none; margin:0; padding:0;}
+
+@media (min-width:600px){
+/*section*/
+section {width:100%; height:auto;}
+/*news*/
+.news {width:100%; height:auto; display:flex; flex-direction:column;}
+.news > .news_1 {width:100%; height:700px; background-color:#f5efeb; display:flex; flex-direction:column; align-items:center;}
+.news > .news_1 > .content1 { width:80%; height:700px; margin-top:70px; display:flex; flex-direction:column;}
+.news > .news_1 > .content1 > h1 {font-size:35px; float:right; color: #4c4c4c; margin:10px 0;}
+.news > .news_1 > .content1 > h1:after {content:""; border-bottom:2px solid #4c4c4c; width:20px;}
+.news > .news_1 > .content1 > p {font-size:12px; line-height:17px; color: #5b5b5b; margin:60px 0 0 10px;}
+.news > .news_1 > .content1 > h2 {font-size:28px; font-family: 'Hahmlet', serif; line-height:35px; margin:10px 0 20px 10px;}
+.news > .news_1 > .content1 > .n2_photo {width:100%; height:380px; overflow: hidden;}
+.news > .news_1 > .content1 > .n2_photo > img {width:100%; height:120%; transform:scale(1); transition:0.3s;}
+.news > .news_1 > .content1 > .n2_photo > img:hover {transform:scale(1.1); transition:0.6s; opacity:0.9; cursor:pointer;}
+
+
+.news > .news_2 {width:100%; height:1000px; background-color:#f5efeb; display:flex; flex-direction:column; align-items:center; justify-content:space-evenly;}
+.news > .news_2 > .content2 {width:80%; height:400px; background-color: #fff;}
+.news > .news_2 > .content2 > .img {width:100%; height:260px; overflow: hidden;}
+.news > .news_2 > .content2 > .img > img {width:100%; height:110%; transform:scale(1); transition:0.3s;}
+.news > .news_2 > .content2 > .img > img:hover {transform:scale(1.1); transition:0.6s; opacity:0.9; cursor:pointer;}
+.news > .news_2 > .content2 > p {font-size:11px; margin:10px; line-height:15px; color: #5b5b5b;}
+.news > .news_2 > .content2 > h3 {font-size:14px;  margin:10px; font-family: 'Hahmlet', serif; line-height:20px;}
+
+
+.news > .news_2 > .content3 {width:80%; height:430px; display:flex; flex-direction:row; justify-content:space-between;}
+
+.news > .news_2 > .content3 > .c3_1 {width:48%; height:430px; background-color: #fff;}
+.news > .news_2 > .content3 > .c3_1 > .img {width:100%; height:60%; overflow:hidden;}
+.news > .news_2 > .content3 > .c3_1 > .img > img {width:100%; height:150%; transform:scale(1); transition:0.3s;}
+.news > .news_2 > .content3 > .c3_1 > .img > img:hover {transform:scale(1.1); transition:0.6s; opacity:0.9; cursor:pointer;}
+.news > .news_2 > .content3 > .c3_1 > p {font-size:11px; margin:15px 0; line-height:15px; color: #5b5b5b; margin:10px;}
+.news > .news_2 > .content3 > .c3_1 > h3 {font-size:14px; font-family: 'Hahmlet', serif;  line-height:20px; margin:10px;}
+
+
+.news > .news_2 > .content3 > .c3_2 {width:48%; height:430px; background-color: #fff;}
+.news > .news_2 > .content3 > .c3_2 > .img2 {width:100%; height:60%; overflow:hidden; margin:0 auto;}
+.news > .news_2 > .content3 > .c3_2 > .img2 > img {width:100%; height:150%; transform:scale(1); transition:0.3s;}
+.news > .news_2 > .content3 > .c3_2 > .img2 > img:hover {transform:scale(1.1); transition:0.6s; opacity:0.9; cursor:pointer;}
+.news > .news_2 > .content3 > .c3_2 > p {font-size:11px; margin:15px 0; line-height:15px;  color: #5b5b5b; margin:10px;}
+.news > .news_2 > .content3 > .c3_2 > h3 {font-size:14px; font-family: 'Hahmlet', serif; line-height:20px; margin:10px;}
+
+/*focus*/
+.focus {width:100%; height:auto; background-color: #eedfd2; display:flex; flex-direction:column; align-items:center; justify-content:space-around; padding:40px 0;}
+.focus > .fc {width:90%; height:20px;}
+.focus > .fc > h1 {font-size:40px; color: #4c4c4c;}
+
+.focus > .f_1 {width:90%; height:450px; display:flex; flex-flow:column wrap; justify-content:flex-start; align-content:space-evenly; margin-top:30px; }
+.focus > .f_1 > .content_1 {width:32%; height:200px; background-color:#fff; margin:10px;}
+.focus > .f_1 > .content_1 > .img {width:100%; height:75%; overflow: hidden;}
+.focus > .f_1 > .content_1 > .img > img {width:100%; height:100%; transform:scale(1); transition:0.3s;}
+.focus > .f_1 > .content_1 > .img > img:hover {transform:scale(1.08); transition:0.5s; cursor:pointer;}
+.focus > .f_1 > .content_1 > p {font-size:11px; margin:10px; line-height:13px;}
+
+/*talents*/
+.talents {width:100%; height:auto; background-color: #ec9c9c; background-image:url("../img/talents.JPG"); background-position:center; display:flex; flex-direction:column; justify-content: center; align-items:center; padding:50px 0;}
+.talents > .content {width:600px; height:250px; display:flex; flex-direction: column; justify-content:space-evenly; align-items:center; text-align:center;}
+.talents > .content > h1 {font-size:30px; color:#fff;}
+.talents > .content > p {font-size:13px; color:#fff; line-height:20px; width:500px;}
+.talents > .content > .button {width:500px; height:40px;}
+.talents > .content > .button > button {width:220px; height: 40px; border:none; margin:0 10px; font-size:11px;}
+.talents > .content > .button > button:hover {background-color:rgb(0, 0, 41); color:#fff; cursor:pointer;}
+
+/*hcgc*/
+.house {width:100%; height:auto;}
+
+.house > .content {width:100%; height:700px; background-color: #fff; display:flex; flex-direction:row; justify-content:center; align-items:center;}
+.house > .content > .hc {width:100%; height:520px; display:flex; flex-direction:column; justify-content:space-between;}
+.house > .content > .hc > .img {width:100%; height:330px; overflow: hidden;}
+.house > .content > .hc > .img > img {width:100%; height:100%; transform:scale(1); transition:0.3s;}
+.house > .content > .hc > .img > img:hover {transform:scale(1.08); transition:0.5s; cursor:pointer;}
+.house > .content > .hc > h1 {font-size:25px; letter-spacing:3px; margin:0 0 0 40px;}
+.house > .content > .hc > p {font-size:12px; line-height:20px; color: #4c4c4c; margin:0 40px;}
+.house > .content > .hc > button {width:230px; height:40px; border:1px solid #121526; font-size: 11px; background-color:#fff; margin:0 40px;}
+.house > .content > .hc > button:hover {background-color:rgb(0, 0, 41); color:#fff; cursor:pointer;}
+
+.house > .content_1 {width:100%; height:650px;}
+.house > .content_1 > .gc {width:100%; height:550px; display:flex; flex-direction:column; justify-content:space-between;}
+.house > .content_1 > .gc > .img {width:100%; height:330px; overflow: hidden;}
+.house > .content_1 > .gc > .img > img {width:100%; height:100%; transform:scale(1); transition:0.3s;}
+.house > .content_1 > .gc > .img > img:hover {transform:scale(1.08); transition:0.5s; cursor:pointer;}
+.house > .content_1 > .gc > h1 {font-size:25px; letter-spacing:3px; margin:0 0 0 40px;}
+.house > .content_1 > .gc > p {font-size:12px; line-height:20px; color: #4c4c4c; margin:0 40px;}
+.house > .content_1 > .gc > button {width:230px; height:40px; border:1px solid #121526; font-size: 11px; margin:0 0 -20px 40px; background-color:#fff;}
+.house > .content_1 > .gc > button:hover {background-color:rgb(0, 0, 41); color:#fff; cursor:pointer;}
+
+/*houses*/
+.houses {width:100%; height:auto; background-image:url("../img/houses.JPG"); background-position:center; background-size:cover; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; padding:50px;}
+.houses > h1 {font-size:30px; color:#fff; font-family: 'Bona Nova', serif;}
+.houses > h1::after {content:""; display:block; width:60px; border-bottom: 1px solid #fff; margin:20px auto;}
+.houses > p {color:#fff; font-size:11px; font-family: 'Hahmlet', serif; line-height:16px; margin:0 0; letter-spacing:1px;}
+
+/*houses_i*/
+.houses_i {width:100%; height:auto; background-color:#e8d9cc; margin:0 auto; display:flex; justify-content:center; align-items:center; flex-direction: column; text-align:center; padding:140px 30px;}
+.houses_i > h1 {font-size:20px; line-height:30px; margin-top:-80px;}
+.houses_i > p {font-size:10px; margin:30px; font-family: 'Hahmlet', serif; line-height:18px; width:80%;}
+
+/*product*/
+.product {width:80%; height:auto; margin:-100px auto; margin-bottom:100px; display:flex; align-items:center; flex-direction:column; background-color: #fff;}
+.product > .content {width:100%; height:200px; display: flex; justify-content:space-between; align-content:center;}
+.product > .content > .box {width:300px; height: 250px; text-align:center; display: flex; justify-content:center; flex-direction:column;}
+.product > .content > .box > h1 {font-size:18px; color: #4c4c4c; font-family:'Montserrat', sans-serif; margin-top:-70px;}
+.product > .content > .box > h2 {font-size:10px; color: #4c4c4c; margin-top:10px;}
+.product > .content > .box > p {display:none;}
+
+.product > .photo {width:100%; height:2500px; display:flex; flex-wrap: wrap; justify-content:space-between;  align-content:space-between;}
+.product > .photo >.box2 {width:47%; height:280px; background-color: #fff; text-align:center;}
+.product > .photo >.box2 > .img {width:100%; height:220px; overflow: hidden;}
+.product > .photo >.box2 > .img > img {width:100%; height:110%; transform:scale(1); transition:0.3s;}
+.product > .photo >.box2 > .img > img:hover {transform:scale(1.08); transition:0.8s; cursor:pointer;}
+.product > .photo >.box2 > h1 {font-size:18px; font-family: 'Bona Nova', serif; margin:20px 0 0 0;}
+.product > .photo >.box2 > p {font-size:10px; color: #a7a7a7; margin-top:5px;}
+
+/*meet*/
+.meet {width:100%; height:auto; display:flex; flex-direction:column; justify-content:space-around; align-items:center; padding:50px 0; margin-top:100px;}
+.meet > .mc {width:400px; height:20px;}
+.meet > .mc > h1 {font-size:40px; color:#4c4c4c;}
+.meet > .content {width:100%; height:1800px; display:flex; flex-wrap:wrap; flex-direction:row; justify-content:center; align-items:space-between; margin-top:50px;}
+
+.meet > .content > .mc1 {width:30%; height:400px; margin:20px; background-color: #fff;}
+.meet > .content > .mc1 > .img {width:100%; height:80%;}
+.meet > .content > .mc1 > .img > img {width:100%; height: 100%; opacity:1; transition:0.3s;}
+.meet > .content > .mc1 > .img > img:hover {opacity:0.7; cursor:pointer; transition:0.8s;}
+.meet > .content > .mc1 > h2 {font-size:20px; margin:20px 0 0 10px; font-family: 'Hahmlet', serif; transition:0.3s;}
+.meet > .content > .mc1 > h2:hover {color: #949494; cursor: pointer; transition:0.3s;}
+.meet > .content > .mc1 > p {font-size:15px; margin:5px 0 0 10px; color: #949494;font-family: 'Gowun Batang', serif;}
+
+.meet > .content > .mc2 {width:30%; height:300px; margin:20px; background-color: #fff;}
+.meet > .content > .mc2 > .img {width:100%; height:80%;}
+.meet > .content > .mc2 > .img > img {width:100%; height: 100%; opacity:1; transition:0.3s;}
+.meet > .content > .mc2 > .img > img:hover {opacity:0.7; cursor:pointer; transition:0.8s;}
+.meet > .content > .mc2 > h2 {font-size:20px; margin:20px 0 0 10px; font-family: 'Hahmlet', serif; transition:0.3s;}
+.meet > .content > .mc2 > h2:hover {color: #949494; cursor: pointer; transition:0.3s;}
+.meet > .content > .mc2 > p {font-size:15px; margin:5px 0 0 10px; color: #949494;font-family: 'Gowun Batang', serif;}
+
+.meet > .content > .mc3 {width:30%; height:430px; margin:20px;}
+.meet > .content > .mc3 > .img {width:100%; height:80%;}
+.meet > .content > .mc3 > .img > img {width:100%; height: 100%; opacity:1; transition:0.3s;}
+.meet > .content > .mc3 > .img > img:hover {opacity:0.7; cursor:pointer; transition:0.8s;}
+.meet > .content > .mc3 > h2 {font-size:20px; margin:20px 0 0 10px; font-family: 'Hahmlet', serif; transition:0.3s;}
+.meet > .content > .mc3 > h2:hover {color: #949494; cursor: pointer; transition:0.3s;}
+.meet > .content > .mc3 > p {font-size:15px; margin:5px 0 0 10px; color: #949494;font-family: 'Gowun Batang', serif;}
+
+.meet > .content > .mc4 {width:30%; height:200px; margin:20px;}
+.meet > .content > .mc4 > .img {width:100%; height:80%;}
+.meet > .content > .mc4 > .img > img {width:100%; height:100%; opacity:1; transition:0.3s;}
+.meet > .content > .mc4 > .img > img:hover {opacity:0.7; cursor:pointer; transition:0.8s;}
+.meet > .content > .mc4 > h2 {font-size:20px; margin:20px 0 0 10px; font-family: 'Hahmlet', serif; transition:0.3s;}
+.meet > .content > .mc4 > h2:hover {color: #949494; cursor: pointer; transition:0.3s;}
+.meet > .content > .mc4 > p {font-size:15px; margin:5px 0 0 10px; color: #949494;font-family: 'Gowun Batang', serif;}
+
+.meet > .content > .mc5 {width:30%; height:350px; margin:20px;}
+.meet > .content > .mc5 > .img {width:100%; height:80%;}
+.meet > .content > .mc5 > .img > img {width:100%; height:100%; opacity:1; transition:0.3s;}
+.meet > .content > .mc5 > .img > img:hover {opacity:0.7; cursor:pointer; transition:0.8s;}
+.meet > .content > .mc5 > h2 {font-size:20px; margin:20px 0 0 10px; font-family: 'Hahmlet', serif; transition:0.3s;}
+.meet > .content > .mc5 > h2:hover {color: #949494; cursor: pointer; transition:0.3s;}
+.meet > .content > .mc5 > p {font-size:15px; margin:5px 0 0 10px; color: #949494;font-family: 'Gowun Batang', serif;}
+
+.meet > .content > .mc6 {width:30%; height:430px; margin:20px;}
+.meet > .content > .mc6 > .img {width:100%; height:80%;}
+.meet > .content > .mc6 > .img > img {width:100%; height:100%; opacity:1; transition:0.3s;}
+.meet > .content > .mc6 > .img > img:hover {opacity:0.7; cursor:pointer; transition:0.8s;}
+.meet > .content > .mc6 > h2 {font-size:20px; margin:20px 0 0 10px; font-family: 'Hahmlet', serif; transition:0.3s;}
+.meet > .content > .mc6 > h2:hover {color: #949494; cursor: pointer; transition:0.3s;}
+.meet > .content > .mc6 > p {font-size:15px; margin:5px 0 0 10px; color: #949494;font-family: 'Gowun Batang', serif;}
+
+.meet > .content > .mc7 {width:30%; height:330px; margin:20px;}
+.meet > .content > .mc7 > .img {width:100%; height:80%;}
+.meet > .content > .mc7 > .img > img {width:100%; height:100%; opacity:1; transition:0.3s;}
+.meet > .content > .mc7 > .img > img:hover {opacity:0.7; cursor:pointer; transition:0.8s;}
+.meet > .content > .mc7 > h2 {font-size:20px; margin:20px 0 0 10px; font-family: 'Hahmlet', serif; transition:0.3s;}
+.meet > .content > .mc7 > h2:hover {color: #949494; cursor: pointer; transition:0.3s;}
+.meet > .content > .mc7 > p {font-size:15px; margin:5px 0 0 10px; color: #949494;font-family: 'Gowun Batang', serif;}
+
+.meet > .content > .mc8 {width:30%; height:400px; margin:20px;}
+.meet > .content > .mc8 > .img {width:100%; height:80%;}
+.meet > .content > .mc8 > .img > img {width:100%; height:100%; opacity:1; transition:0.3s;}
+.meet > .content > .mc8 > .img > img:hover {opacity:0.7; cursor:pointer; transition:0.8s;}
+.meet > .content > .mc8 > h2 {font-size:20px; margin:20px 0 0 10px; font-family: 'Hahmlet', serif; transition:0.3s;}
+.meet > .content > .mc8 > h2:hover {color: #949494; cursor: pointer; transition:0.3s;}
+.meet > .content > .mc8 > p {font-size:15px; margin:5px 0 0 10px; color: #949494;font-family: 'Gowun Batang', serif;}
+}
